@@ -1,18 +1,24 @@
 import styles from './Card.module.css';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 function Card(props) {
 
-    const value = props.number ? "-50%" : "50%";
+    const value = props.number ? "-200%" : "200%";
     return (
-        <AnimatePresence>
             <motion.div
-                key = {props.key}
-                initial={{ x: value, opacity: "0.0" }}
-                animate={{ x: "0", opacity: "1" }}
-                exit = {{x: value, opacity: "0.0", transition: {duration: 0.5}}}
-                transition={{ duration: 0.5, ease: "easeOut" }}
+                key = {props.key}    
+    //   initial={{ x: value, opacity: 0 }}
+    //   animate={{ x: "0", opacity: "1" }}
+    //   exit={{x: value , transition: {duration: 0.5}}}
+    //   transition={{duration: 1 }}
 
+      layout
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{duration: 0.5 }}
+
+                // exit = {{x: value, opacity: "0.0", transition: {duration: 0.5}}} 
 
                 className={styles.card}>
                 <div className={styles.image}>Image</div>
@@ -28,7 +34,7 @@ function Card(props) {
                     </div>
                 </div>
             </motion.div>
-        </AnimatePresence>);
+        );
 
 }
 
