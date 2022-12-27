@@ -1,0 +1,38 @@
+.outer{
+    width: 80%;
+    margin: 0 auto 50px;
+}
+
+.outer h1{
+    text-align: center;
+}
+
+.outer .tags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 15px auto;
+    gap: 10px;
+}
+
+.outer .tags .tag{
+    display: block;
+    background-color: aliceblue;
+    border: 2px solid black;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+.outer .tags .tag.active,
+.outer .tags .tag:hover{
+    background-color:antiquewhite;
+}
+
+.outer .cards{
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}

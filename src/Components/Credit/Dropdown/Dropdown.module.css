@@ -1,0 +1,30 @@
+.topBar{
+    display: flex;
+    padding: 10px 20px;
+    padding-top: 0;
+    justify-content: space-between;
+}
+
+.topBar .name{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.topBar .arrow{
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    transform: rotateX(180deg);
+    transition: all 0.5s linear;
+}
+
+.topBar .arrow.reverse{
+    transform: rotateX(0deg);
+}
+
+.downBar {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,18 @@
+.outer{
+    width: 70%;
+    margin: auto;
+}
+
+.header{
+    margin: 50px 0;
+    text-align: center;
+}
+
+.hr{
+    margin: 25px 0;
+}
+
+.leads{
+    display: flex;
+    flex-wrap: wrap;
+}
